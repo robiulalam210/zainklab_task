@@ -4,39 +4,11 @@
 
 import 'dart:convert';
 
-ProductsModelList productsModelListFromJson(String str) => ProductsModelList.fromJson(json.decode(str));
+List<ProductsModelList> productsModelListFromJson(String str) => List<ProductsModelList>.from(json.decode(str).map((x) => ProductsModelList.fromJson(x)));
 
-String productsModelListToJson(ProductsModelList data) => json.encode(data.toJson());
+String productsModelListToJson(List<ProductsModelList> data) => json.encode(List<dynamic>.from(data.map((x) => x.toJson())));
 
 class ProductsModelList {
-  List<Product>? products;
-  int? total;
-  int? skip;
-  int? limit;
-
-  ProductsModelList({
-    this.products,
-    this.total,
-    this.skip,
-    this.limit,
-  });
-
-  factory ProductsModelList.fromJson(Map<String, dynamic> json) => ProductsModelList(
-    products: json["products"] == null ? [] : List<Product>.from(json["products"]!.map((x) => Product.fromJson(x))),
-    total: json["total"],
-    skip: json["skip"],
-    limit: json["limit"],
-  );
-
-  Map<String, dynamic> toJson() => {
-    "products": products == null ? [] : List<dynamic>.from(products!.map((x) => x.toJson())),
-    "total": total,
-    "skip": skip,
-    "limit": limit,
-  };
-}
-
-class Product {
   int? id;
   String? title;
   String? description;
@@ -49,7 +21,7 @@ class Product {
   String? thumbnail;
   List<String>? images;
 
-  Product({
+  ProductsModelList({
     this.id,
     this.title,
     this.description,
@@ -63,7 +35,7 @@ class Product {
     this.images,
   });
 
-  factory Product.fromJson(Map<String, dynamic> json) => Product(
+  factory ProductsModelList.fromJson(Map<String, dynamic> json) => ProductsModelList(
     id: json["id"],
     title: json["title"],
     description: json["description"],

@@ -8,14 +8,14 @@ import '../model/product_list_model.dart';
 import '../repository/repository.dart';
 
 class ProductController extends GetxController {
-  final productsListData = <ProductsModelList>[].obs;
-  final isLoadingPatientListFunction = false.obs;
+  final productsListData =  <ProductsModelList>[].obs;
+  final isLoadingProdactListFunction = false.obs;
 
   @override
   void onInit() {
     super.onInit();
 
-    Timer(const Duration(seconds: 1), () {
+    Timer(const Duration(seconds: 0), () {
       getProductData();
     });
   }
@@ -26,8 +26,9 @@ class ProductController extends GetxController {
     try {
       await ProductRepository.getproductData().then((value) {
         if (value != null) {
-          productsListData.value = value as List<ProductsModelList>;
-          isLoadingPatientListFunction.value = true;
+
+          productsListData.value = value;
+          isLoadingProdactListFunction.value = true;
         }
       });
       //  isLoading.value = true;
