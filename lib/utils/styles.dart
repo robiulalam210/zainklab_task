@@ -6,38 +6,10 @@ import 'colors_code.dart';
 
 
 class Style {
-  static const robotoHeader8 = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w700,
-    color: ColorsCode.text_primary_color,
-    fontSize: 8,
-  );
-  static const robotoHeader8White = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w700,
-    color: ColorsCode.page_background_color,
-    fontSize: 8,
-  );
-  static const robotoRegular = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.text_primary_color,
-    fontSize: 12,
-  );
-  static const dashboardWhitText400 = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.page_background_color,
-    fontSize: 12,
-  );
 
-  // ignore: constant_identifier_names
-  static const robotoRegular_w500 = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w500,
-    color: ColorsCode.text_primary_color,
-    fontSize: 12,
-  );
+
+
+
   // ignore: constant_identifier_names
   static const text_hind_style = TextStyle(
     fontFamily: 'Roboto',
@@ -72,162 +44,10 @@ class Style {
     fontSize: 30,
   );
 
-  static const robotoHeader = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w700,
-    color: ColorsCode.text_primary_color,
-    fontSize: 40,
-  );
 
-  // ignore: constant_identifier_names
-  static const alltext_block_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.text_primary_color,
-    fontSize: 10,
-  );
-  // ignore: constant_identifier_names
-  static const alltext_white_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.page_background_color,
-    fontSize: 10,
-  );
 
-  // ignore: constant_identifier_names
-  static const alltext_block_text_style_red = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.snackbar_error_color,
-    fontSize: 10,
-  );
 
-  // ignore: constant_identifier_names
-  static const alltext_block_text_style_primary_color = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.primary_color,
-    fontSize: 10,
-  );
-  // ignore: constant_identifier_names
-  static const alltext_red_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.snackbar_error_color,
-    fontSize: 10,
-  );
 
-  // ignore: constant_identifier_names
-  static const alltext_primary_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.primary_color,
-    fontSize: 10,
-  );
-
-// ignore: constant_identifier_names
-  static const tab_bar_block_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.text_primary_color,
-    fontSize: 10,
-  );
-  // ignore: constant_identifier_names
-  static const block_text_style10 = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.text_primary_color,
-    fontSize: 10,
-  );
-  // ignore: constant_identifier_names
-  static const under_line_block_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.primary_color,
-    fontSize: 10,
-    decoration: TextDecoration.underline,
-  );
-
-  // ignore: constant_identifier_names
-  static const text_block_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.page_background_color,
-    fontSize: 14,
-  );
-  static const text_block_text_style_black = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.text_primary_color,
-    fontSize: 14,
-  );
-
-  // ignore: constant_identifier_names
-  static const level_heading_text_block_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.page_background_color,
-    fontSize: 13,
-  );
-  // ignore: constant_identifier_names
-  static const level_heading_text_block1_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.text_primary_color,
-    fontSize: 15,
-  );
-
-  static const robotoHeader15primaryColor = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w700,
-    color: ColorsCode.primary_color,
-    fontSize: 15,
-  );
-
-  // ignore: constant_identifier_names
-  static const text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.primary_color,
-    fontSize: 15,
-  );
-
-  // ignore: constant_identifier_names
-  static const block_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.text_primary_color,
-    fontSize: 15,
-  );
-
-  // ignore: constant_identifier_names
-  static const error_text_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.snackbar_error_color,
-    fontSize: 12,
-  );
-  static const primarytext_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.primary_color,
-    fontSize: 12,
-  );
-
-  // ignore: constant_identifier_names
-  static const submit_button_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w900,
-    color: ColorsCode.submit_button_text_primary_color,
-    fontSize: 15,
-  );
-  // ignore: constant_identifier_names
-  static const button_style = ButtonStyle(
-    backgroundColor: MaterialStatePropertyAll(ColorsCode.primary_color),
-  );
-  static const button_stylewhite = ButtonStyle(
-    backgroundColor: MaterialStatePropertyAll(ColorsCode.page_background_color),
-  );
 
   // ignore: constant_identifier_names
   static const submit_button_style_black = TextStyle(
@@ -275,21 +95,6 @@ class Style {
     fontSize: 12,
   );
 
-  // ignore: constant_identifier_names
-  static const drawer_logoutbutton_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w700,
-    color: ColorsCode.drawer_button_colors,
-    fontSize: 16,
-  );
-
-  // ignore: constant_identifier_names
-  static const drawer_heading_style = TextStyle(
-    fontFamily: 'Roboto',
-    fontWeight: FontWeight.w400,
-    color: ColorsCode.drawer_button_colors,
-    fontSize: 20,
-  );
 
   // ignore: constant_identifier_names
   static const profile_heading_style = TextStyle(

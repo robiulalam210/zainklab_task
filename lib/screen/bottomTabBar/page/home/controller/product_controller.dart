@@ -29,7 +29,6 @@ class ProductController extends GetxController {
       await ProductRepository.getproductData().then((value) {
         if (value != null) {
 
-          print(value);
           productsListData.value = value;
           isLoadingProdactListFunction.value = true;
         }
