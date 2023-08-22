@@ -19,8 +19,8 @@ class HomePopupfunction {
               child: Column(
                 children: [
                   ListTile(
-                      title: Text(data.title),
-                      subtitle: Text(data.category),
+                      title: Text(data.title,style: Style.allnormaltext,),
+                      subtitle: Text(data.category,style: Style.allnormaltext,),
                       leading: CircleAvatar(
                         backgroundImage: NetworkImage(data.thumbnail),
                       ),
@@ -31,9 +31,7 @@ class HomePopupfunction {
                         icon: Icon(Icons.person_add_alt_1),
                         label: Text("Flow"),
                       )),
-                  SizedBox(
-                    height: 5,
-                  ),
+                  Style.distan_size5,
                   SizedBox(
                     height: 300,
                     child: ClipRRect(
@@ -41,9 +39,7 @@ class HomePopupfunction {
                       borderRadius: BorderRadius.circular(20),
                     ),
                   ),
-                  SizedBox(
-                    height: 15,
-                  ),
+               Style.distan_size15,
                   Container(
                     height: 50,
                     width: 400,

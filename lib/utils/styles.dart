@@ -94,6 +94,12 @@ class Style {
     color: ColorsCode.text_primary_color,
     fontSize: 12,
   );
+  static const allnormaltext = TextStyle(
+    fontFamily: 'Roboto',
+    fontWeight: FontWeight.w400,
+    color: ColorsCode.text_primary_color,
+    fontSize: 12,
+  );
 
 
   // ignore: constant_identifier_names
