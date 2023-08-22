@@ -2,6 +2,7 @@
 
 import 'dart:async';
 
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../model/product_list_model.dart';
@@ -10,7 +11,8 @@ import '../repository/repository.dart';
 class ProductController extends GetxController {
   final productsListData =  <ProductsModelList>[].obs;
   final isLoadingProdactListFunction = false.obs;
-
+  TextEditingController searchController = TextEditingController();
+  var namedata = "".obs;
   @override
   void onInit() {
     super.onInit();
@@ -27,6 +29,7 @@ class ProductController extends GetxController {
       await ProductRepository.getproductData().then((value) {
         if (value != null) {
 
+          print(value);
           productsListData.value = value;
           isLoadingProdactListFunction.value = true;
         }

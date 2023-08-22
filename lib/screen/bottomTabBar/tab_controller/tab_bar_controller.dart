@@ -13,9 +13,9 @@ class TabNavvController extends GetxController {
     return [
       HomePage(),
       InboxPage(),
-      InboxPage(),
       HomePage(),
       InboxPage(),
+      HomePage(),
     ];
   }
 
@@ -36,7 +36,7 @@ class TabNavvController extends GetxController {
       PersistentBottomNavBarItem(
         icon: Icon(CupertinoIcons.add,color: Colors.white,size: 40,),
         activeColorPrimary: CupertinoColors.black,
-        inactiveColorPrimary: CupertinoColors.systemGrey,
+        inactiveColorPrimary: CupertinoColors.activeOrange,
       ),
       PersistentBottomNavBarItem(
         icon: Icon(CupertinoIcons.mail),

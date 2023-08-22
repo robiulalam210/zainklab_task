@@ -17,7 +17,9 @@ class ProductRepository {
       );
       if (response.statusCode == 200) {
         var json = response.body;
+        print(json);
         var jsonData = json['products'];
+        print(jsonData);
         var jsonDataencd = jsonEncode(jsonData);
 
         return  productsModelListFromJson(jsonDataencd);

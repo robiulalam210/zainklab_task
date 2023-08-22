@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:persistent_bottom_nav_bar/persistent_tab_view.dart';
 
-import '../controller/tab_bar_controller.dart';
+import '../tab_controller/tab_bar_controller.dart';
+
 
 class BottomBar extends StatelessWidget {
   BottomBar({super.key});
